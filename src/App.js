@@ -42,16 +42,12 @@ function App() {
 
     const handleKeyPress = (event) => {
         if (event.key === "Enter") {
-            // 👇️ your logic here
-            // console.log("Enter key pressed ✅");
             handlesubmit(event);
         }
     };
 
     const handleKeyPressReverse = (event) => {
         if (event.key === "Enter") {
-            // 👇️ your logic here
-            // console.log("Enter key pressed ✅");
             handlesubmitreverse(event);
         }
     };
@@ -123,7 +119,6 @@ function App() {
             method: "GET",
             headers: headers,
         };
-        console.log("here");
         fetch(
             "https://google-translate1.p.rapidapi.com/language/translate/v2/languages",
             options
@@ -247,7 +242,6 @@ function App() {
                             )}
                         </div>
                     </div>
-                    {/* <p>{translated}</p> */}
                 </div>
             </div>
         </div>
